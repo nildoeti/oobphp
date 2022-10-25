@@ -4,4 +4,3 @@
 
     // imprime o quadro de um número
     echo  quadrado(4);
-
