@@ -30,8 +30,14 @@
         return "Fazendo uma chícara de café $type.\n";
     }
 
-    echo makecoffee();
-    echo makecoffee(null);
-    echo makecoffee("expresso");
+    // echo makecoffee();
+    // echo makecoffee(null);
+    // echo makecoffee("expresso");
 
 
+    // Exemplo #5 Usando tipos não escalares como valores padrões
+    function fazercafe ($tipo = array('capputino'), $cafeteria = NULL) {
+        $dispositivo = is_null($cafeteria) ? 'Mãos' : $cafeteria;      
+    }
+    
+    
