@@ -49,4 +49,24 @@ for (;;) {
 }
 
 // exemplo 5
-for ($m = 1, $n = 0; $m < 100; $n += $m, print $m, $m++);
+// for ($m = 1, $n = 0; $m < 10; $n += $m, print $m, $m++);
+
+
+// array modificado com um laço for
+$pessoas = array(
+	array(
+		'nome' => 'Lucas', 'idade' => 23
+	),
+	array(
+		'nome' => 'Emma', 'idade' => 34
+	)
+);
+
+
+$test = count($pessoas);
+print $test;
+
+for ($i = 0; $i < count($pessoas); $i++) {
+	$pessoas[$i]['salt'] = mt_rand(000000, 999999);
+}
+
